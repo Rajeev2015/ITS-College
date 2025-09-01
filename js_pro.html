@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sumOfTwo() {
+            // var a=10;
+            // var b=20;
+            var a = document.getElementById("num1").value;
+            var b = document.getElementById("num2").value;
+            var sum = parseFloat(a) + parseFloat(b);  // 
+            // sum="10"+"5" => 105
+            // sum=10+5=> 15
+            alert(sum)
+
+        }
+
+        function mulOfTwo() {
+            //   var a=Number(document.getElementById("num1").value)
+            // var b=Number(document.getElementById("num2").value)
+            // var c=Number(document.getElementById("num3").value)
+            // var mul=a+b+c;
+            // document.writeln("Mul of three numbers is : "+mul)
+            var num = 47547.77766966;
+            document.writeln("<br/>" + num)
+            document.writeln("<br/>" + num.toFixed(2))
+        }
+
+        function posNeg() {
+            var num = parseInt(prompt("Enter the number : ?"))
+            if (num > 0) {
+                 10
+                alert("It is postive number : " + num)
+            }
+            // if (num < 0) {
+            //     alert("It is negative number : " + num)
+            // }
+            // alert(num)
+            else 
+            {
+                alert("It is negative number : " + num)
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" name="" id="num1" placeholder="Enter 1 number : ?">
+    <br>
+    <input type="text" name="" id="num2" placeholder="Enter 2 number : ?">
+    <br>
+    <input type="text" name="" id="num3" placeholder="Enter 3 number : ?">
+    <br>
+
+    <input type="submit" value="Sum Of Two Numbers" onclick="sumOfTwo()">
+    <br>
+    <input type="submit" value="Mul Of Two Numbers" onclick="mulOfTwo()">
+
+    <br>
+    <input type="submit" value="Pos and Neg" onclick="posNeg()">
+
+
+</body>
+
+</html>
