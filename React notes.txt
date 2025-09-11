@@ -1,0 +1,102 @@
+How to create react js project ?
+	=> npx create-react-app <app_name>
+What do you mean by modules ?
+	=> Collection of JavaScript code is called modules / library.
+What is full form of NPM ?
+	=> Node package manager (npm) 
+=> What is SPA ?
+=> What is react-router-dom ?
+	=> npm i react-router-dom
+
+=> npm i bootstrap 
+=> npm i react-router-dom
+=> What is jsx ?
+=> what is components ?
+	=> re useable 
+	=> Components name must be first character is Capital 
+=> How many type of components ?
+	1) Class Based
+	2) function based
+
+=> How to perform routing operation in react js ?
+	=> npm i react-router-dom
+	=> import { BrowserRouter, Route, Routes } from 'react-router-dom';
+	=>  
+	<BrowserRouter>
+          <Header/>
+              <Routes>
+                <Route path="/" element={<Dashboard/>}/>
+                <Route path="about-us" element={<About/>}/>
+                <Route path="contact-us" element={<Contact/>}/>
+                <Route path="*" element={<Pagenotfound/>}/>
+              </Routes>
+          <Footer/>
+      </BrowserRouter>
+	=> For linking components import first of all
+	=> import { Link } from 'react-router-dom' 
+	=> <Link className="nav-link" to="#">About Us</Link>
+
+=> What is props ?
+	=> It is called properties .
+	=> It is also known as an object.
+		this.props={
+    			"p_name": "shirt",
+    			"p_img": "gallery/banner01.jpg",
+    			"p_price": "1200",
+    			"p_desc": "a garment for the upper part of the body usually with a collar, sleeves, a front opening, and a tail 						long enough to be tucked inside pants or a skirt"
+		}
+		console.log(this.props.p_img)
+		
+	=> It is read only.
+	=> We pass data one components to other components.
+	=> pass data as arguments and receive as parameters  .
+		=> function add(a,b)
+		{
+
+		}
+		add(10,20)
+
+(Q) What is state ?
+	=> It is also called an object.
+	=> We can change state data/value.
+	=> We can hold data in same components.
+	=> We can define state always in constructor  using (this.state({}))
+	=> For update / change state value we can use (this.setState()) method.
+	=> Whenever state value is changed components are re-render automatic in DOM.
+
+(Q) What is Network Calls / REST Full API / Web services ?
+
+	=> fetch (promise)
+	=> Thrid party modules (Axios)
+		=> npm i axios
+	=> We are going to connect with backend (server)
+	=> https(get,post,put/patch,delete)
+	=> https://www.abc.com (Endpoint)
+	=> https://getbootstrap.com/docs/5.3/components/card/
+	=> https://transform.tools/html-to-jsx
+	=> http://localhost:3000/
+	
+
+(Q) How to create json server ?
+	=> npm i -g json-server 
+	=> create a server folder in  root directory
+		=> then create db.json file 
+		=> {
+   			ontact":[]
+		}
+(Q) How to run server ?
+	=> npm i -g nodemon 
+		=> It is automtic update change in your application 
+        => json-server <file_name> -w --port <port_name>
+	      json-server db.json -w --port 3004 
+
+	
+
+
+
+
+
+
+
+
+ 
