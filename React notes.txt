@@ -90,6 +90,86 @@ What is full form of NPM ?
         => json-server <file_name> -w --port <port_name>
 	      json-server db.json -w --port 3004 
 
+========================================
+Vite | Next Generation Frontend Tooling
+https://vite.dev/
+npm create vite@latest book _management_library 
+cd book _management_library
+npm install
+npm run dev
+
+(Q) For Message 
+	=> npm i sweetalert2
+
+(Q) How to create latest react app using vite ?
+	=> npm create vite@latest
+	=> after create react app
+	=> then run this command 
+	=> 
+  		cd book_management_library
+ 		 npm install
+  		 npm run dev
+	=> Note : Index.js file is change in to main.jsx file
+
+(Q) Create function based component for short -cut key (rafc).
+	import React from 'react'
+
+	export const About = () => {
+ 		 return (
+   			 <div>About</div>
+  		)
+	}
+
+(Q) Book Store Details
+      id
+      book_name
+      book_author
+      book_edition
+      book_page_number
+      book_price
+      book_descrition  
+
+(Q) Function based Hooks 
+	1)  useState()
+			=> All hooks are import top of the components .
+			=> It will return two values.
+				1) current state
+				2) update the state value  
+			Note: Take a initial value 
+				   Hooks are re-useable 
+(Q): How to define state in function based components
+		const [state,setState]=useState(0);
+		const [count,setCount]=useState(0);
+		const [store,setStore]=useState([]);
+Note: Whenever state value is changed / update component are re-render automatic in a DOM.
+
+=> npm i react-hot-toast (for display message only);
+
+(Q) What is useFffect() hooks in react js ?
+=>  It is knowns as  side effect of components .
+=>  
+	useEffect(()=>{
+			code here ........
+	})
+=> It is same as componentDidMount life cycle method of class component.
+=> It is run/execute automatic whenever our component render in DOM.
+=> If we do not pass props/state  as dependency in blank array [] then it will execute every render.
+=> if we pass props / state as DI then it will execute only one time .
+=> if we need to execute useEffect again then we can update the state value. it will run one more time.
+
+	useEffect(()=>{
+			code here ........
+	},[props/state])
+
+
+
+
+
+	 
+
+
+
+
 	
 
 
